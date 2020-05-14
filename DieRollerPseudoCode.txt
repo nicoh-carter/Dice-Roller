@@ -1,0 +1,65 @@
+import random class
+
+class DiceRoller
+{
+	
+		/*Step 1: generate a number from 1-6
+		  Step 2: Print out conditions for whatever number is generated
+		  Step 3: Call Method that was written from step 1 and step 2
+		  Step 4: Ask for user input to roll again
+		  Step 5: Format
+		  Step 6: Exit program
+		*/
+
+	method Roll()
+	{
+		//Step 1
+		random.num(1,6)	
+
+		//Step 2
+		if num = 1
+		{
+			print([-----------]\n[           ]\n[     0     ]\n[           ]\n[-----------]);
+		}
+		else if num = 2
+		{
+			print([-----------]\n[           ]\n[   0   0   ]\n[           ]\n[-----------]);
+		}
+		else if num = 3	
+		{
+			print([-----------]\n[     0     ]\n[     0     ]\n[     0     ]\n[-----------]);
+		}
+		else if num = 4
+		{
+			print([-----------]\n[   0   0   ]\n[           ]\n[   0   0   ]\n[-----------]);
+		}
+		else if num = 5
+		{
+			print([-----------]\n[   0   0   ]\n[     0     ]\n[   0   0   ]\n[-----------]);
+		}
+		else if num = 6
+		{
+			print([-----------]\n[   0   0   ]\n[   0   0   ]\n[   0   0   ]\n[-----------]);
+		}
+	}
+	
+	method main()
+	{
+		//Step 5
+		print("This is a dice simulator");
+
+		//Step 3
+		Roll();
+		
+		print("Press y to roll again: ");
+		
+		//Step 4
+		userinput();
+		
+		//Step 5 and 6
+		if userinput.ignorecase == "y"
+			Roll()
+		else	
+			exit(); 
+	}
+}
